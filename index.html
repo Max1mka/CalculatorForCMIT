@@ -12,27 +12,27 @@
 </head>
 <body class="root">
 <div class="calculator">
-   <div class="calculator__field calculator__field-arg1"></div>
-   <div class="calculator__field calculator__field-arg2"></div>
-   <button class="calculator__number-zero">0</button>
-   <button class="calculator__number-one">1</button>
-   <button class="calculator__number-two">2</button>
-   <button class="calculator__number-three">3</button>
-   <button class="calculator__number-four">4</button>
-   <button class="calculator__number-five">5</button>
-   <button class="calculator__number-six">6</button>
-   <button class="calculator__number-seven">7</button>
-   <button class="calculator__number-eight">8</button>
-   <button class="calculator__number-nine">9</button>
-   <button class="calculator__number-divide">/</button>
-   <button class="calculator__number-multiply">*</button>
-   <button class="calculator__number-subtract">-</button>
-   <button class="calculator__number-sum">+</button>
-   <button class="calculator__number-separator">,</button>
-   <button class="calculator__number-negative">+/-</button>
-   <button class="calculator__number-equal">=</button>
-   <button class="calculator__number-clearAll">CE</button>
-   <button class="calculator__number-clear">×</button>
+   <div id="arg1" class="calculator__field calculator__field-arg1"></div>
+   <div id="arg2" class="calculator__field calculator__field-arg2"></div>
+   <button onclick="Calculator.addNumber(this)" class="calculator__number-zero">0</button>
+   <button onclick="Calculator.addNumber(this)" class="calculator__number-one">1</button>
+   <button onclick="Calculator.addNumber(this)" class="calculator__number-two">2</button>
+   <button onclick="Calculator.addNumber(this)" class="calculator__number-three">3</button>
+   <button onclick="Calculator.addNumber(this)" class="calculator__number-four">4</button>
+   <button onclick="Calculator.addNumber(this)" class="calculator__number-five">5</button>
+   <button onclick="Calculator.addNumber(this)" class="calculator__number-six">6</button>
+   <button onclick="Calculator.addNumber(this)" class="calculator__number-seven">7</button>
+   <button onclick="Calculator.addNumber(this)" class="calculator__number-eight">8</button>
+   <button onclick="Calculator.addNumber(this)" class="calculator__number-nine">9</button>
+   <button onclick="Calculator.operator(this)" class="calculator__number-divide">/</button>
+   <button onclick="Calculator.operator(this)" class="calculator__number-multiply">*</button>
+   <button onclick="Calculator.operator(this)" class="calculator__number-subtract">-</button>
+   <button onclick="Calculator.operator(this)" class="calculator__number-sum">+</button>
+   <button onclick="Calculator.split()" class="calculator__number-separator">,</button>
+   <button onclick="Calculator.revert()" class="calculator__number-negative">+/-</button>
+   <button onclick="Calculator.result()" class="calculator__number-equal">=</button>
+   <button onclick="Calculator.clearAll()" class="calculator__number-clearAll">CE</button>
+   <button onclick="Calculator.clear()" class="calculator__number-clear">×</button>
 </div>
 <script src="index.js"></script>
 </body>
